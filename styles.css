@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat&family=Outfit:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat&family=Outfit:wght@100;200;400&display=swap');
+
+:root {
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+}
+#image {
+    width: 50%;
+    height: 500px;
+}
+
+.card {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    width: 43em;
+    height: 500px;
+    margin: 150px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info {
+    padding: 35px;
+}
+
+#top-heading {
+    font-size: 19px;
+    font-family: "Montserrat";
+    letter-spacing: 2.5px;
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 20px;
+}
+
+#main-heading {
+    font-size: 37px;
+    font-weight: 1000px;
+    color: var(--Very-dark-blue);
+    font-family: "Fraunces";
+    padding-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+#description {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: var(--Dark-grayish-blue);
+    padding-bottom: 22px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+#discount-price {
+    font-size: 34px;
+    font-family: "Fraunces";
+    font-weight: 650px;
+    color: var(--Dark-cyan);
+    display: inline-block;
+    padding-bottom: 25px;
+}
+
+#actual-price {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    padding-bottom: 25px;
+    padding-left: 27px;
+    display: inline;
+}
+
+#cart-button {
+    background-color: var(--Dark-cyan);
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: var(--White);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    word-spacing: 1.3px;
+    padding-left: 26px;
+}
+
+.svg-icon {
+    /* Place the icon on the text baseline. */
+    position: relative;
+    top: .125em;
+    left: -7.9em;
+
+    /* Prevent the icon from shrinking inside a flex container. */
+    flex-shrink: 0;
+
+    /* Scale the icon to match the font-size of the parent element. */
+    height: 1em;
+    width: 1em;
+
+    /* Let the icon take whatever color the parent has. */
+    fill: var(--White);
+
+    /*
+     * If the icon is used on a link, which has a color transition,
+     * we can also use a transition on the fill value.
+    */
+   transition: fill .3s;
+}
+
+.attribution {
+    font-size: 20px;
+    font-family: "Montserrat";
+}
